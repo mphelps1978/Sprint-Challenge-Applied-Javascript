@@ -55,16 +55,10 @@ axios
     // const articleTopics = Object.entries(response.data.articles);
     //console.log('articleTopics:', articleTopics);
     for (let [key, value] of Object.entries(response.data.articles)) {
-      //console.log(`${value}`);
-
       value.forEach(items => {
         createArticleCard(items);
       });
     }
-
-    // articleTopics.forEach(value => {
-    //   const article = Object.values(value);
-    //console.log(article);
   })
 
   .catch(error => {
