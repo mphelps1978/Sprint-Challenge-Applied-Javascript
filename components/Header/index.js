@@ -37,7 +37,7 @@ function header() {
 	header.appendChild(date);
 	header.appendChild(headerTitle);
 	header.appendChild(temp);
-	console.log(header);
+
 	return header;
 }
 
